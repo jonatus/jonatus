@@ -21,6 +21,7 @@ def get_filters():
             break
         else:
             print('\nWrong city selected, Select from the cities above, thank you')
+            print("\nOnly cities above is available to show their statistics")
 
     # get user input for month (all, january, february, ... , june)
     while True:
@@ -52,11 +53,8 @@ def get_filters():
             break
 
 
-
-
-
-
     print("Thank you for your response, see you later. Goodbye")
+    print("But don't be confuse the project will still show the rest of the stats below. Thank you")
     print('-'*40)
     return city, month, day
 
