@@ -9,7 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 Cities = ['chicago', 'new york city', 'washington']
 months = ['january', 'february', 'march', 'april', 'may', 'june']
-days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ]
+days = ['1.sunday', '2.monday', '3.tuesday', '4.wednesday', '5.thursday', '6.friday', '7.saturday' ]
 
 def get_filters():
     print('\nHello! Let\'s explore some US bikeshare data!')
@@ -190,10 +190,11 @@ def user_stats(df):
     print('The most earliest year of birth is: ', most_earliest_year_of_birth)
 
     most_recent_year_of_birth = int(df['Birth Year']).max()
-    print('The most recent year of birth from motivate bikeshare is: ',most_recent_year_of_birth)
+    print('\nThe most recent year of birth from motivate bikeshare is: ',most_recent_year_of_birth)
 
     Most_common_year_of_birth =int(df['Birth Year']).value_counts().idxmax()
-    print('The Most common year of birth from motivate bikeshare is: ', Most_common_year_of_birth)
+    print('\nThe Most common year of birth from motivate bikeshare is: ', Most_common_year_of_birth)
+    print(f'\nThe msot earliest, recent and common year of birth are:{most_earliest_year_of_birth},{most_recent_year_of_birth},{Most_common_year_of_birth}')
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
